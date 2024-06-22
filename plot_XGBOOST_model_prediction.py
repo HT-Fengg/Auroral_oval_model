@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2023/11/6 18:36
-# @Author  : FHT
-# @File    : plot_model_predictions_for_KP_789.py
 
 import matplotlib.pyplot as plt
 import numpy as np
