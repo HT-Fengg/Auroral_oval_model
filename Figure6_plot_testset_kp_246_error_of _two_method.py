@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2023/11/9 17:36
-# @Author  : FHT
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -21,12 +19,12 @@ def polar_map(hf):
     ax=hf
     # ax = plt.gca(projection='polar')
     ax.set_thetagrids(np.arange(0.0, 360.0, 30))
-    ax.set_thetamin(0.0)  # 设置极坐标图开始角度为0°
-    ax.set_thetamax(360.0)  # 设置极坐标结束角度为360°
+    ax.set_thetamin(0.0)  
+    ax.set_thetamax(360.0) 
     ax.set_xticklabels(['06', '08', '10', '12', '14', '16', '18', '20', '22', '00', '02', '04'], fontsize=10,family='times new roman', weight='bold')
     ax.set_rgrids(np.arange(0.0, 50.0, 10))
-    ax.set_rlabel_position(270.0)  # 标签显示在0°
-    ax.set_rlim(0.0, 40.0)  # 标签范围为[0, 5000)
+    ax.set_rlabel_position(270.0) 
+    ax.set_rlim(0.0, 40.0)  
     ax.set_yticklabels([' ', '80°', '70°', '60°', '50°'], fontsize=10, family='times new roman', weight='bold',color='r')
     ax.grid(True, linestyle="-", color="k", linewidth=2, alpha=0.8)
     return hf
